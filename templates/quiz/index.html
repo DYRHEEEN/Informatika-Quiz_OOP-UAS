@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1 class="display-1 text-info">Quiz Informatika</h1>
+    <p class="display-4 d-none d-sm-block">Uji kemampuan mu dalam bidang Informatika!</p>
+    <p class="lead">Kami telah menyiapkan berbagai Ujian, dengan topik pilihan.</p>
+
+    
+
+    <p class="lead">Sign up jika kamu tidak mempunyai akun dan dapatkan akses ke topik dan pertanyaan yang kamu sukai.</p>
+    <p><strong> Mulai perjalanan mu disini:</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info btn-gradient" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+  </div>  
+</section>
+<div class="fixed-bottom">
+  {% include "quiz/footer.html" %}
+</div>
+
+</body>
+
+</html>

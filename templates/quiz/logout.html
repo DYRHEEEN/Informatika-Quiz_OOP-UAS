@@ -1,0 +1,24 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="pb-5">
+    {% include "quiz/navbar.html" %}
+  </div>
+    <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <h1 class="display-1 text-info">Terimakasih</h1>
+        <p class="display-4 d-none d-sm-block">Datang kembali, untuk memulai ujian lain!</p>
+        <p class="lead">kamu telah berhasil logout.</p>
+        <br><br><br>
+      </div>  
+    </section>
+<div class="pt-5">
+{% include "quiz/footer.html" %}
+</div>
+  </body>
+</html>

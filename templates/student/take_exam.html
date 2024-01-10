@@ -1,0 +1,58 @@
+{% extends 'student/studentbase.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+</head>
+<br><br>
+<div class="container my-4">
+    <div class="jumbotron">
+
+	      <h3 class="text-info text-center">Sebelum memulai ujian, baca terlebih dahulu peraturan ini</h3>
+
+        <div class="row">
+
+            <div class="card border-info mx-4 my-4">
+                <div class="card-body text-info">
+
+                    <h4 class="card-title">Detail Ujian :</h4>
+                    <p class="card-text">
+                        </p><ul style="list-style:decimal;">
+                            <li>Nama Ujian : {{course.course_name}}</li>
+                            <li>Total Pertanyaan : {{total_questions}}</li>
+                            <li>Total Nilai : {{total_marks}}</li>
+                        </ul>
+                    <p></p>
+
+
+
+                    <h4 class="card-title">Petunjuk dan Peraturan :</h4>
+                    <p class="card-text">
+                        </p><ul style="list-style:decimal;">
+                            <li>Semua pertanyaan berupa pilihan ganda.</li>
+                            <li><span class="text-danger">Hanya ada satu jawaban yang benar.</span></li>
+                            <li>Setiap pertanyaan memiliki nilai yang berbeda. 
+                            </li>
+                
+                            <li>Coba untuk menjawab dengan cepat dan tepat.</li>
+                            <li>Jika Kamu menekan refresh atau kembali ke halaman sebelumnya, akan ada pertanyaan baru dan pertanyaan yang Kamu ajukan pertama akan dihitung sebagai percobaan.</li>
+                            <li>Pertanyaan akan diberikan secara acak pada semua User</li>
+                            <li>Nilai bisa dilihat jika kamu telah menyelesaikan semua pertanyaan.</li>
+                        </ul>
+                    <p></p>
+                    <a href="{% url 'start-exam' course.id  %}" class="btn btn-info">Let's GO!!</a>
+                </div>  
+                <div class="card-footer">Selamat Mengerjakan</div>  
+            </div>  
+        </div>  
+
+    </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock content %}

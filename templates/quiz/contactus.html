@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Kirim kami pesan dan kesan kamu pada Website kami !</h3>
+
+    <form method="POST" autocomplete="off">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Kirim Pesan" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>
+
+<div class="fixed-bottom">
+  {% include "quiz/footer.html" %}
+</div>
+</body>
+
+</html>
