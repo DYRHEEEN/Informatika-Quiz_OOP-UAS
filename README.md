@@ -21,7 +21,13 @@ Website Informatika Quiz ini merupakan website yang menyediakan platform bagi Ma
    ```
 - Jika penginstall sudah berhasil, untuk menjalankan program, jalankan code berikut :
   ```
-  py manage.py makemigrations
   py manage.py migrate
   py manage.py runserver
   ```
+- Akan didapatkan sebuah URL yang dapat dibuka di browser, seperti ini :
+  ```
+  http://127.0.0.1:8000/
+  ```
+Maka akan tampil dari project Django yang sudah di clone dari repository ini. 
+
+#SELESAI
