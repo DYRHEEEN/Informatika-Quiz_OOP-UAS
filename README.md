@@ -30,4 +30,4 @@ Website Informatika Quiz ini merupakan website yang menyediakan platform bagi Ma
   ```
 Maka akan tampil dari project Django yang sudah di clone dari repository ini. 
 
-#SELESAI
+# SELESAI
