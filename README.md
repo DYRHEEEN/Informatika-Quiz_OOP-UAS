@@ -5,7 +5,7 @@
 | ---------------------- | ------------- |
 |    Danang Nurcahyo     |   312210004   |
 |    Ihsan Hadimulya     |   312210047   |
-| Ferdyanan Eka Prasetya |   312210121   |
+|  Ferdyana Eka Prasetya |   312210121   |
 |   Rhendy Diki Nugraha  |   312210150   |
 |    M Fauzan Ghifari    |   312210428   |
 
